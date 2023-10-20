@@ -11,6 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Infra", "TheLa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Tests", "TheLair.Nest.Tests\TheLair.Nest.Tests.csproj", "{8594DC76-1C30-48E9-9424-3DBEAC52C637}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Server", "TheLair.Nest.Web\Server\TheLair.Nest.Web.Server.csproj", "{FB3BCB84-C01C-4D93-8D00-61BA72336272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Client", "TheLair.Nest.Web\Client\TheLair.Nest.Web.Client.csproj", "{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Shared", "TheLair.Nest.Web\Shared\TheLair.Nest.Web.Shared.csproj", "{F40E7A5E-DA42-4140-BFF8-473676EE56D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Transport", "TheLair.Nest.Web.Transport\TheLair.Nest.Web.Transport.csproj", "{20AD89B6-73BE-45D5-9145-667D075C63DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +41,22 @@ Global
 		{8594DC76-1C30-48E9-9424-3DBEAC52C637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8594DC76-1C30-48E9-9424-3DBEAC52C637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8594DC76-1C30-48E9-9424-3DBEAC52C637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB3BCB84-C01C-4D93-8D00-61BA72336272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3BCB84-C01C-4D93-8D00-61BA72336272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3BCB84-C01C-4D93-8D00-61BA72336272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3BCB84-C01C-4D93-8D00-61BA72336272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F40E7A5E-DA42-4140-BFF8-473676EE56D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F40E7A5E-DA42-4140-BFF8-473676EE56D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F40E7A5E-DA42-4140-BFF8-473676EE56D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F40E7A5E-DA42-4140-BFF8-473676EE56D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20AD89B6-73BE-45D5-9145-667D075C63DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AD89B6-73BE-45D5-9145-667D075C63DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AD89B6-73BE-45D5-9145-667D075C63DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AD89B6-73BE-45D5-9145-667D075C63DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

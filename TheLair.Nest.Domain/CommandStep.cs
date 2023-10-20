@@ -8,6 +8,7 @@ namespace TheLair.Nest.Domain;
 
 public class CommandStep
 {
+    public Guid Id { get; set; } = Guid.NewGuid();
     public string Path { get; set; } = String.Empty;
     public string Command { get; set; } = String.Empty;
 
