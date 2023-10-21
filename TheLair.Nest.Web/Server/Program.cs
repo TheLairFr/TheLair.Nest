@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.ResponseCompression;
+using TheLair.ASP_Net.Helpers;
 using TheLair.Nest.Domain;
 using TheLair.Nest.Infra;
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.ConfigureOneOf();
 
 builder.Services.AddSingleton<FileRepository<NestConfig>>(i => 
     new FileRepository<NestConfig>(i.GetRequiredService<IConfiguration>()["NestConfigPath"]!));

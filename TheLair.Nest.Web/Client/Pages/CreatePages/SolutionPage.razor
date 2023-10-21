@@ -1,0 +1,41 @@
+﻿@page "/create/solution"
+
+@inherits NestPage
+
+<PageTitle>Create a Solution</PageTitle>
+
+<h1>Create a Solution</h1>
+
+<Loader Loaded="Loaded">
+    <div class="mb-1">
+        <label for="name">Name of the new Solution:</label>
+        <input id="name" class="form-control" @bind="Payload.Name"/>
+    </div>
+    <div class="mb-1">
+        <label for="url">Github URL of the Solution:</label>
+        <input id="url" class="form-control" @bind="Payload.GithubURL"/>
+    </div>
+    <button class="btn btn-success" @onclick="CreateSolution">Create the Solution</button>
+</Loader>
+
+@code 
+{
+    private CreateSolutionPayload Payload = new();
+
+    private async Task CreateSolution()
+    {
+        Loaded = false;
+        Response r = await HttpClient.CreateSolution(Payload);
+
+        if (r)
+        {
+            Config.Solutions.Add(SolutionMapper.To(Payload));
+            Toasts.ShowSuccess("Solution was created !");
+            Router.NavigateTo("/");
+            return;
+        }
+
+        Toasts.ShowError("There was an issue while creating the Solution :(");
+        Loaded = true;
+    }
+}

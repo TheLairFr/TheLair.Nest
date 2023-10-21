@@ -1,0 +1,47 @@
+﻿@inherits BlazorAppPageBase<NestStateManager>
+
+@inject NestHttpClient _HttpClient
+@inject IToastService toastService
+
+@code {
+    protected bool Loaded;
+    protected NestHttpClient HttpClient = null!;
+    protected NestConfig Config = null!;
+    protected IToastService Toasts = null!;
+
+    [CascadingParameter] public IModalService Modal { get; set; } = default!;
+
+    public override Task ServiceInjection()
+    {
+        HttpClient = _HttpClient;
+        Toasts = toastService;
+
+        return (Task.CompletedTask);
+    }
+
+    public override async Task BeforeAuthentication()
+    {
+        Loaded = false;
+
+        if (StateManager.SessionState.Config == null!)
+            StateManager.SessionState.Config = await HttpClient.GetConfig();
+
+        Config = StateManager.SessionState.Config;
+    }
+
+    public override Task AfterAuthentication()
+    {
+        Loaded = true;
+        return (Task.CompletedTask);
+    }
+
+    public IModalReference AskConfirmation(string title, string content = "", string yes = "Yes", string no = "No")
+    {
+        var parameters = new ModalParameters()
+            .Add(nameof(ConfirmationModal.Message), content)
+            .Add(nameof(ConfirmationModal.Yes), yes)
+            .Add(nameof(ConfirmationModal.No), no);
+
+        return Modal.Show<ConfirmationModal>(title, parameters);
+    }
+}

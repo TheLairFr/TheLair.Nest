@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TheLair.Nest.Domain\TheLair.Nest.Domain.csproj" />
+    <ProjectReference Include="..\TheLair.Nest.Web\Shared\TheLair.Nest.Web.Shared.csproj" />
   </ItemGroup>
 
 </Project>

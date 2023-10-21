@@ -1,8 +1,39 @@
 ﻿@page "/"
-@using TheLair.Nest.Web.Transport
-
-@inject NestHttpClient Client
+@inherits NestPage
 
 <PageTitle>Index</PageTitle>
 
 <h1>Welcome to the Nest !</h1>
+
+<Loader Loaded="Loaded">
+    @foreach (Solution solution in Config.Solutions)
+    {
+        <div class="d-flex">
+            <span class="mt-auto mb-auto">
+                @solution.Name
+                <a href="solution/@solution.Id" class="btn btn-success">Go to the Solution</a>
+                <button class="btn btn-danger" @onclick="() => AskDelete(solution)">Delete the Solution</button>
+            </span>
+            
+        </div>
+        <hr />
+    }
+
+    <a class="btn btn-success" href="create/solution">Créer une solution</a>
+</Loader>
+
+@code 
+{
+    private async Task AskDelete(Solution solution)
+    {
+        IModalReference modal = AskConfirmation($"Delete the solution {solution.Name} ?");
+        ModalResult result = await modal.Result;
+
+        if (result.Confirmed)
+        {
+            Toasts.ShowSuccess($"Solution was deleted");
+            Config.Solutions.Remove(solution);
+            _ = HttpClient.DeleteSolution(solution);
+        }
+    }
+}

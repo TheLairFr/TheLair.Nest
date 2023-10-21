@@ -2,5 +2,5 @@
 
 public class NestConfig
 {
-    public List<Solution> Solutions = new List<Solution>();
+    public List<Solution> Solutions { get; set; } = new List<Solution>();
 }

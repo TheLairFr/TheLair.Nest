@@ -10,5 +10,6 @@ public class Project
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; } = String.Empty;
-    public CommandStep[] BuildCommands = Array.Empty<CommandStep>();
+    public CommandStep[] BuildCommands { get; set; } = Array.Empty<CommandStep>();
+    public CommandStep[] RunCommands { get; set; } = Array.Empty<CommandStep>();
 }

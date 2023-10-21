@@ -1,12 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using TheLair.Nest.Domain;
 using TheLair.Nest.Infra;
-using TheLair.Nest.Web.Shared;
 
 namespace TheLair.Nest.Web.Server.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ConfigController : ControllerBase
     {
         private readonly FileRepository<NestConfig> ConfigRepository;

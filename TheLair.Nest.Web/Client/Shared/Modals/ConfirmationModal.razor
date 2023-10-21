@@ -1,0 +1,21 @@
+﻿<div>
+    <p>@Message</p>
+
+    <button class="btn btn-success" @onclick="Accept">Yes</button>
+    <button class="btn btn-danger" @onclick="Refuse">No</button>
+</div>
+
+@code {
+    [CascadingParameter] 
+    BlazoredModalInstance BlazoredModal { get; set; } = default!;
+
+    [Parameter] 
+    public string? Message { get; set; }
+    [Parameter]
+    public string? Yes { get; set; }
+    [Parameter]
+    public string? No { get; set; }
+
+    private async Task Accept() => await BlazoredModal.CloseAsync(ModalResult.Ok());
+    private async Task Refuse() => await BlazoredModal.CloseAsync(ModalResult.Cancel());
+}

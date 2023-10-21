@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.12" />
+    <PackageReference Include="TheLair.ASP_Net" Version="1.2.12" />
   </ItemGroup>
 
   <ItemGroup>

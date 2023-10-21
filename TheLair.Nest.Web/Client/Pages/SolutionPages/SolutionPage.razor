@@ -1,0 +1,25 @@
+﻿@page "/solution/{Id:guid}"
+
+@inherits NestPage
+
+<Loader Loaded="Loaded">
+    <PageTitle>Solution - @Solution.Name</PageTitle>
+
+    <h1>@Solution.Name</h1>
+    <hr/>
+
+</Loader>
+
+@code 
+{
+    [Parameter]
+    public Guid Id { get; set; }
+    private Solution Solution = null!;
+
+    public override Task AfterAuthentication()
+    {
+        Solution = Config.Solutions.First(i => i.Id == Id);
+        Loaded = true;
+        return (Task.CompletedTask);
+    }
+}

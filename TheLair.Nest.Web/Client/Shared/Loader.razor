@@ -1,0 +1,16 @@
+﻿@if (Loaded)
+{
+    @ChildContent
+}
+else
+{
+    <div class="loader"></div>
+}
+
+@code
+{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; } = null!;
+    [Parameter]
+    public bool Loaded { get; set; }
+}

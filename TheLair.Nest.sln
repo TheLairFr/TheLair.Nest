@@ -3,21 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest", "TheLair.Nest\TheLair.Nest.csproj", "{69676F8E-A07D-4EB7-B765-DA71B293FAFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest", "TheLair.Nest\TheLair.Nest.csproj", "{69676F8E-A07D-4EB7-B765-DA71B293FAFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Domain", "TheLair.Nest.Domain\TheLair.Nest.Domain.csproj", "{A3052DA9-DBAB-4BF5-8C0B-5FF0FEB9A5AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Domain", "TheLair.Nest.Domain\TheLair.Nest.Domain.csproj", "{A3052DA9-DBAB-4BF5-8C0B-5FF0FEB9A5AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Infra", "TheLair.Nest.Infra\TheLair.Nest.Infra.csproj", "{E470C4CD-8AFD-4321-9199-A1BF8C9EBCBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Infra", "TheLair.Nest.Infra\TheLair.Nest.Infra.csproj", "{E470C4CD-8AFD-4321-9199-A1BF8C9EBCBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Tests", "TheLair.Nest.Tests\TheLair.Nest.Tests.csproj", "{8594DC76-1C30-48E9-9424-3DBEAC52C637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Tests", "TheLair.Nest.Tests\TheLair.Nest.Tests.csproj", "{8594DC76-1C30-48E9-9424-3DBEAC52C637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Server", "TheLair.Nest.Web\Server\TheLair.Nest.Web.Server.csproj", "{FB3BCB84-C01C-4D93-8D00-61BA72336272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Web.Server", "TheLair.Nest.Web\Server\TheLair.Nest.Web.Server.csproj", "{FB3BCB84-C01C-4D93-8D00-61BA72336272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Client", "TheLair.Nest.Web\Client\TheLair.Nest.Web.Client.csproj", "{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Web.Client", "TheLair.Nest.Web\Client\TheLair.Nest.Web.Client.csproj", "{3F29F5F1-2A3D-4942-88C6-634A0CF99FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Shared", "TheLair.Nest.Web\Shared\TheLair.Nest.Web.Shared.csproj", "{F40E7A5E-DA42-4140-BFF8-473676EE56D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Web.Shared", "TheLair.Nest.Web\Shared\TheLair.Nest.Web.Shared.csproj", "{F40E7A5E-DA42-4140-BFF8-473676EE56D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheLair.Nest.Web.Transport", "TheLair.Nest.Web.Transport\TheLair.Nest.Web.Transport.csproj", "{20AD89B6-73BE-45D5-9145-667D075C63DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheLair.Nest.Web.Transport", "TheLair.Nest.Web.Transport\TheLair.Nest.Web.Transport.csproj", "{20AD89B6-73BE-45D5-9145-667D075C63DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
